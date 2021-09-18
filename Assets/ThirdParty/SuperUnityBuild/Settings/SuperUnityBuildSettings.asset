@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3781058057888213068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acaf75cc66fc934ea46bf602fc7c245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 20
+    name: WebGL
+    enabled: 1
+    binaryNameFormat: '{0}'
+  variants: []
+  platformName: WebGL
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 13
+--- !u!114 &-2929125489730118610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2786f6b2301a94f4288672ff5305244c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 5
+    name: Windows x86
+    enabled: 1
+    binaryNameFormat: '{0}.exe'
+  - target: 19
+    name: Windows x64
+    enabled: 0
+    binaryNameFormat: '{0}.exe'
+  variants: []
+  platformName: PC
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5886119a5c7b34d8872ab527ca3e1b, type: 3}
+  m_Name: SuperUnityBuildSettings
+  m_EditorClassIdentifier: 
+  _basicSettings:
+    baseBuildFolder: Builds
+    buildPath: $VERSION.$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
+    openFolderPostBuild: 1
+  _productParameters:
+    buildCounter: 4
+    buildVersion: 1.0.0.4
+    versionTemplate: 1.0.0.$BUILD
+    autoGenerate: 1
+    syncWithPlayerSettings: 0
+  _releaseTypeList:
+    releaseTypes:
+    - typeName: Release
+      bundleIdentifier: com.FishcakeGames.DontDropIt
+      companyName: Fishcake Games
+      productName: Don't Drop It
+      buildOptions: 0
+      customDefines: 
+      sceneList:
+        enabledScenes:
+        - fileGUID: d1c3109bdb54ad54c8a2b2838528e640
+        - fileGUID: dad035d932ee02f4084db8c9d5d695a5
+  _platformList:
+    platforms:
+    - {fileID: -3781058057888213068}
+    - {fileID: -2929125489730118610}
+    - {fileID: 9088520263583394241}
+    - {fileID: 1077342746564597876}
+  _projectConfigurations:
+    configSet:
+      _Buckets: 01000000ffffffff06000000ffffffff020000000400000005000000
+      _HashCodes: 6d38f6476da5e23577a7aa19510e9f594848db6095803a142d6dfd48
+      _Next: ffffffff00000000ffffffffffffffff03000000ffffffffffffffff
+      _Count: 7
+      _Version: 7
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - Release/WebGL/WebGL
+      - Release/WebGL
+      - Release/PC/Windows x86
+      - Release/PC
+      - Release/macOS/macOS (Intelx64)
+      - Release/macOS
+      - Release
+      _Values:
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Release/WebGL/WebGL
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Release/PC/Windows x86
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Release/macOS/macOS (Intelx64)
+      - enabled: 1
+        childKeys:
+        - Release/WebGL
+        - Release/PC
+        - Release/macOS
+    showViewOptions: 0
+    showConfigs: 0
+    showBuildInfo: 0
+    hideDisabled: 0
+    treeView: 0
+    selectedKeyChain: Release/WebGL/WebGL
+  _preBuildActions:
+    buildActions: []
+  _postBuildActions:
+    buildActions: []
+--- !u!114 &1077342746564597876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc439ce9d1bfb34a821f7d6fabc4fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 0
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 24
+    name: Linux x64
+    enabled: 1
+    binaryNameFormat: '{0}.x86_64'
+  variants: []
+  platformName: Linux
+  dataDirNameFormat: '{0}_Data'
+  targetGroup: 1
+--- !u!114 &9088520263583394241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d962d142a259c394da2bdb301b72eeb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 2
+    name: macOS
+    enabled: 1
+    binaryNameFormat: '{0}.app'
+  variants:
+  - variantName: macOS Architecture
+    selectedIndex: 0
+    values:
+    - Intelx64
+    - Apple Silicon
+    - Universal
+  platformName: macOS
+  dataDirNameFormat: '{0}.app/Contents'
+  targetGroup: 1
